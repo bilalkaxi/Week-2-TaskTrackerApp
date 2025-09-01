@@ -1,0 +1,141 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: radial-gradient(blue,white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+background: radial-gradient();
+}
+/* button */
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+}
+.btn-d{
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ff0000;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ff0000;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+.btn-d:hover {
+  background-color:  #ff0000;
+  color: white;
+}
+/* input */
+#input {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  caret-color: #007bff;
+}
+
+#input:hover {
+  outline:none;
+}
+.container{
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #007bff;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #007bff;
+  background-color: #242424;
+}
+
+h1{
+  text-align: center;
+  color: #007bff;
+  text-shadow: 0 0 10px #007bff;
+}
+form{
+  display: flex;
+  gap:10px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  padding: 0.5rem;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #333333;
+  
+}
+p{
+ padding: 10px 20px;
+  margin: 5px;
+  color: #ffffff; 
+}
+.scale,.scale-s{
+  transition: all ease 0.5s;
+}
+.scale:hover{
+  transform: scale(1.1);
+}
+.scale-s:hover{
+  transform: scale(0.9);
+}
+@media (max-width:330px){
+  .container{
+    width: 200px;
+  }
+  h1{
+    font-size: x-large;
+  }
+  form{
+    text-align: center;
+
+    }
+  #input{
+    width: 150px;
+  }
+  .btn,.btn-d{
+    width: 80px;
+    font-size: small;
+    padding: 10px;
+  }
+  .task{
+    min-width: 150px;
+  }
+  .btn-d{
+    max-height: 50px;
+    max-width: 60px;
+    align-self:center;
+  }
+}
